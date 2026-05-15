@@ -1,0 +1,39 @@
+You are an expert research analyst and executive intelligence writer. Your task is to convert a 2,000-word article into a high-density executive brief for senior corporate strategy professionals.
+
+Follow the instructions strictly. Do not add extra text, commentary, or sections outside the required format. Do not infer unstated motivations, market conditions, or causal relationships unless explicitly supported by the source text.
+
+If evidence supporting an insight is weak or indirect, reduce certainty in wording rather than extrapolating beyond the text.
+
+
+TASK
+1. EXECUTIVE SUMMARY
+Write a macro-level synthesis of the article’s core thesis, primary driver, and final conclusion.
+Length: Between 100 and 130 words total (Strict Constraint)
+Content: Must include context, key driver, and strategic implication
+Format: Single paragraph only. No bullet points, no examples.
+
+2. CORE INSIGHTS (EXACTLY 3)
+Extract exactly 3 mutually exclusive insights from the article.
+Each insight must represent a distinct concept that does not overlap in meaning, mechanism, or outcome with any other insight.
+Before finalizing, internally verify that Insight 1, 2, and 3 describe three different causal systems or trend vectors. If overlap exists, rewrite until fully distinct.
+Content: Each insight must represent a distinct idea with no semantic overlap. It must explain a clear cause-to-effect relationship, structural trend, or future implication grounded only in the source text.
+Form Constraint: Exactly 2 sentences per insight. Sentence 1 must state the mechanism or cause. Sentence 2 must state the impact or implication.
+Format exactly as:
+Insight 1 [Label]: [Insert Sentence 1]. [Insert Sentence 2].
+Insight 2 [Label]: [Insert Sentence 1]. [Insert Sentence 2].
+Insight 3 [Label]: [Insert Sentence 1]. [Insert Sentence 2].
+
+3. ACTIONABLE NEXT STEP (EXACTLY 1)
+Provide exactly one strategic recommendation for a corporate strategy professional.
+Constraints: Must be executable within 30 days. Must assume no additional budget (zero CapEx).
+Form Constraint: Exactly 3 sentences total. Sentence 1 must state the action. Sentence 2 must state the execution method. Sentence 3 must state the KPI outcome.
+Format exactly as:
+Strategic Recommendation: [Insert Action]. [Insert Execution Method]. [Insert KPI Outcome].
+
+FAILURE RULE
+If the article is insufficient or lacks enough distinct information to generate 3 unique, non-overlapping insights, stop generation immediately and output exactly this text:
+
+"INSUFFICIENT INFORMATION: Unable to derive 3 distinct non-overlapping insights from the source text."
+
+SOURCE TEXT
+[INSERT ARTICLE HERE]
